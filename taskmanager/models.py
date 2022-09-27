@@ -22,7 +22,7 @@ class Task(db.Model):
     category_id = db.Column(db.Integer, db.ForeignKey("category.id", ondelete="CASCADE"), nullable=True)
 
 
-    def __repr__(self):
-        # __repr__ to represent itself in the form of a string
-        return f"#{self.id} -Task:{self.task_name} -Urgent: {self.is_urgent}"
+def __repr__(self):
+    # __repr__ to represent itself in the form of a string
+    return f"#{self.id} -Task:{self.task_name} -Urgent: {self.is_urgent}"
        

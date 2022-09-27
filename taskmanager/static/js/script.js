@@ -13,4 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // drop down menu
     let dropdown = document.querySelectorAll('select');
     M.FormSelect.init(dropdown);
+
+// collapsible
+    
+    let collapsible = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsible);
+  
+
   });
